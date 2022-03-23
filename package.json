@@ -1,0 +1,19 @@
+{
+  "name": "mem",
+  "version": "1.0.0",
+  "description": "Mini estação meteorológica",
+  "main": "index.js",
+  "scripts": {
+    "test": "run mem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorbitt/MEM.git"
+  },
+  "author": "Igor Bittencourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorbitt/MEM/issues"
+  },
+  "homepage": "https://github.com/igorbitt/MEM#readme"
+}
