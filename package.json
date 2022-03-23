@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/igorbitt/MEM#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3"
   }
 }
