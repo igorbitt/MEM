@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/igorbitt/MEM/issues"
   },
-  "homepage": "https://github.com/igorbitt/MEM#readme"
+  "homepage": "https://github.com/igorbitt/MEM#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
