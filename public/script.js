@@ -1,3 +1,5 @@
+const DEFAULT_URL = "localhost"
+
 function renderSensorData(id, data, unit){
     document.getElementById(id).innerHTML = data + unit;
 }
@@ -30,13 +32,13 @@ function renderChart(dataToChart){
     });
 }
 
-var socket = io('localhost');
+var socket = io(DEFAULT_URL);
 
-socket.on('SensorData', function(SensorData){
-    renderSensorData("minTemperature", SensorData.TempMin, "°C");
-    renderSensorData("currentTemperature", SensorData.TempCurrent, "°C");
-    renderSensorData("maxTemperature", SensorData.TempMax, "°C");
-    renderSensorData("pressure", 926, " hPa");
-    renderSensorData("city", SensorData.location, "");
+socket.on('stationData', function(stationData){
+    renderSensorData("minTemperature", stationData.TempMin, "°C");
+    renderSensorData("currentTemperature", stationData.TempCurrent, "°C");
+    renderSensorData("maxTemperature", stationData.TempMax, "°C");
+    renderSensorData("pressure", stationData.pressure, " hPa");
+    renderSensorData("city", stationData.location, "");
     renderChart(SensorData.chartData);
 }); 
