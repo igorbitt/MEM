@@ -44,7 +44,7 @@ const API_URL = 'ENDEREÇO_DA_SUA_ESTAÇÃO';
 ```
 
 Aqui está o código do arduino, este código foi feito para o sensor `BMP180`
-```C
+```C++
 #include <SPI.h>
 #include <Ethernet.h>
 #include <Adafruit_BMP085.h>
